@@ -17,7 +17,7 @@ public class PerhitunganAritmatika {
         int angka1= getInput("Angka pertama");
         int angka2= getInput("Angka kedua");
         int hasilPenjumlahan = angka1+angka2;
-        System.out.println("Hasil Penjumlahan: " +hasilPenjumlahan);
+        System.out.println(angka1+" + "+angka2+" = " +hasilPenjumlahan);
         System.out.println();
     }
 
@@ -27,7 +27,7 @@ public class PerhitunganAritmatika {
         int angka1 =getInput("Angka pertama");
         int angka2 =getInput("Angka kedua");
         int hasilPengurangan =angka1-angka2;
-        System.out.println("Hasil Pengurangan: " +hasilPengurangan);
+        System.out.println(angka1+" - "+angka2+" = " +hasilPengurangan);
         System.out.println();
     }
     //Perkalian
@@ -36,7 +36,7 @@ public class PerhitunganAritmatika {
         int angka1 =getInput("Angka pertama");
         int angka2 =getInput("Angka kedua");
         int hasilPerkalian =angka1*angka2;
-        System.out.println("Hasil Perkalian: " +hasilPerkalian);
+        System.out.println(angka1+" * "+angka2+" = " +hasilPerkalian);
         System.out.println();
     }
     //Pembagian
@@ -45,7 +45,7 @@ public class PerhitunganAritmatika {
         double angka1 =getInputDouble("Angka pertama");
         double angka2 =getInputDouble("Angka kedua");
         double hasilPembagian =angka1/angka2;
-        System.out.println("Hasil Pengurangan: " +hasilPembagian);
+        System.out.println(angka1+" / "+angka2+" = " +hasilPembagian);
         System.out.println();
     }
     //Modulus
@@ -54,7 +54,7 @@ public class PerhitunganAritmatika {
         int angka1 =getInput("Angka pertama");
         int angka2 =getInput("Angka kedua");
         int hasilModulus =angka1%angka2;
-        System.out.println("Hasil Pengurangan: " +hasilModulus);
+        System.out.println(angka1+" % "+angka2+" = " +hasilModulus);
         System.out.println();
     }
     // membuat method get input untuk mempersingkat sintak sehingga tidak perlu mengguankan banyak scanner dan print out
