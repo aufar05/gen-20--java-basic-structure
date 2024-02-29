@@ -11,6 +11,8 @@ public class HitungSampaiN {
         if(n>0){
             String tahapan = hitungNilaiN(n);
             System.out.println( tahapan);
+        }else {
+            System.out.println("nilai n tidak boleh kurang dari 1");
         }
 
         input.close();
