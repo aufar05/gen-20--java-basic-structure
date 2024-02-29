@@ -6,14 +6,10 @@ public class HitungSampaiN {
         System.out.print("Masukan nilai n : ");
         int n =input.nextInt();
 
+        String tahapan = hitungNilaiN(n);
 
+        System.out.println((n>0) ? tahapan: "nilai n tidak boleh kurang dari 1");
 
-        if(n>0){
-            String tahapan = hitungNilaiN(n);
-            System.out.println( tahapan);
-        }else {
-            System.out.println("nilai n tidak boleh kurang dari 1");
-        }
 
         input.close();
     }
