@@ -21,6 +21,7 @@ public class BilanganKhusus {
     }
 }
 
+// pendekatan oop dengan membuat class yang isinya ada method dan attributnya
 class Bilangan {
     public int n;
 
