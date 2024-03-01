@@ -6,35 +6,38 @@ import java.util.Scanner;
 public class BilanganKhusus {
 
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         System.out.print("Masukan angka : ");
         int angka = input.nextInt();
-        Bilangan bilangan =new Bilangan(angka);
-        if (angka>0){
+        Bilangan bilangan = new Bilangan(angka);
+
+        if (angka > 0) {
             bilangan.filterBilangan();
-        }else {
+        } else {
             System.out.println("Bilangan harus bulat positif");
         }
 
         input.close();
     }
-
-
 }
-class  Bilangan {
+
+class Bilangan {
     public int n;
-    public Bilangan (int n)
-    {
+
+    public Bilangan(int n) {
         this.n = n;
     }
-    public  void filterBilangan(){
-        for (int i = 0 ; i<=n; i++){
-            if (i>0 && i%3 ==0 && i%2!=0) {System.out.print(i+ " ");}
 
-
+    public void filterBilangan() {
+        int count = 0;
+        // lakukan looping dengan pertambahan 3 sebanyak angka yang dimasukan
+        for (int i = 3; count < n; i += 3) {
+            // hanya mencetak angka yang tidak habis dibagi 2
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+                count++;
+            }
         }
-
     }
 
 }
